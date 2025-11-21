@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rosace 2</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <script src="https://unpkg.com/p5.js-svg@1.5.1"></script>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            id="export-controls"
+            style="
+                position: fixed;
+                top: 12px;
+                left: 12px;
+                z-index: 999;
+                display: flex;
+                gap: 8px;
+            "
+        >
+            <button
+                onclick="downloadSVG()"
+                style="
+                    padding: 8px 12px;
+                    border-radius: 6px;
+                    border: none;
+                    background: #222;
+                    color: #fff;
+                "
+            >
+                Télécharger SVG
+            </button>
+            <button
+                onclick="downloadPNG()"
+                style="
+                    padding: 8px 12px;
+                    border-radius: 6px;
+                    border: none;
+                    background: #222;
+                    color: #fff;
+                "
+            >
+                Télécharger PNG
+            </button>
+        </div>
+        <script src="sketch.js"></script>
+    </body>
+</html>
